@@ -13,4 +13,4 @@ A (simple) Python & Javascript $NYSE Stock Analysis bot.
 
 ### ⚠️ Disclaimer
 This is a school project for Information Processes and Technology. Do not use this bot for real trading. We are not financial advisors.
-jonah was here lol and jake sucks
+
