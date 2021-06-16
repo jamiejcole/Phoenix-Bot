@@ -9,6 +9,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
+    background-color: #00bfff
 }
 
 nav{
@@ -63,3 +64,17 @@ a{
     position: relative;
     
   }
+  img {
+    height: 100px;
+    width: 100px;
+    right: 0;
+    top: 0;
+    position: relative;
+  }
+  h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 300px;
+    margin-top: 200px
+}
