@@ -2,15 +2,15 @@
 A (simple) Python & Javascript $NYSE Stock Analysis bot.
 
 ### 🚀 Used technologies
-- Python Flask
+- Python Tensorflow and Matplotlib
+- Pyrebase4
 - HTML/CSS
-- Javascript D3.js & Chart.js
+- Javascript
 - Google Firebase
 - Yahoo Finance API
 
 ### 🔍 TODO
-- Start the project
+- Nothing :)
 
 ### ⚠️ Disclaimer
 This is a school project for Information Processes and Technology. Do not use this bot for real trading. We are not financial advisors.
-
