@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Head tag for relevant webpage metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Bot | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <!-- Text objects for the text box's on the right side of the page. These get updated in the javascript -->
+    <pre id='object'></pre>
+
+    <div id="decision" class="decision">
+        <strong><p id="buysell" class="buysell">?</p></strong>
+    </div>
+    <div class=info id='info'>
+        <p>Stock Info</p>
+    </div>  
+
+    <!-- Nav bar for the web page -->
+    <nav class= "nav1">
+        <div class=navLogo>
+            <a href="index.html"><img src="PhoenixBotLogo3.png" class="logoImg"/></a>
+        </div>
+        <a class='bot-link' href='index.html'>Home <i class="fas fa-home"></i></a>
+        <a class='active bot-link' href='dashboard.html?AAPL'>Dashboard <i class="fas fa-chart-line"></i></a>
+        <a class='bot-link' href='about.html'>About <i class="fas fa-question-circle"></i></a>
+        <a class='bot-link' href='mailto:22jc@student.nbcs.nsw.edu.au'>Contact <i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- Buttons for individual stocks -->
+    <div id = 'here' class='stock-button'>
+        <a id = 'AAPL' class ='stock-links APPL' href ='dashboard.html?AAPL'>Apple <i class="fab fa-apple"></i></a>
+        <a id = 'GOOGL' class ='stock-links GOOGL' href ='dashboard.html?GOOGL'>Google <i class="fab fa-google"></i></a>
+        <a id = 'MSFT' class ='stock-links MSFT' href ='dashboard.html?MSFT'>Microsoft <i class="fab fa-microsoft"></i></a>
+        <a id = 'TSLA' class ='stock-links TSLA' href ='dashboard.html?TSLA'>Tesla <i class="fas fa-charging-station"></i></a>
+        <a id = 'AMZN' class ='stock-links AMZN' href ='dashboard.html?AMZN'>Amazon <i class="fab fa-amazon"></i></a>
+    </div>
+
+    <!-- Graph image and parent div -->
+    <div style="border-radius: 80px" class= 'graph-position'>
+        <img class="graph-img" style="border-radius: 80px" id="graph">
+    </div>
+
+
+    
+</body>
+<!-- Including firebase.js reference for javascript script -->
+<script src="firebase.js"></script>
+</html>
